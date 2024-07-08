@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 15px;
+    background: #f0f2f5;
+
+}
+
+.facebook-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 100%;
+}
+.facebook-container .text{
+    margin-bottom: 90px;
+}
+
+.facebook-container h1{
+    font-size: 4rem;
+    color: #1877f2;
+    margin-bottom: 10px;
+}
+.facebook-container p{
+    font-size: 1.75rem;
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0.1),
+                0 4px 12px rgba(0,0,0.1);
+}
+
+form input{
+    display: flex;
+    flex-direction: column;
+    height: 55px;
+    width: 100%;
+    padding: 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #1877f2;
+}
+::placeholder{
+    font-size: 1rem;
+    color: #777;
+}
+
+.login-link{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-link  .log-in{
+    padding: 15px 0;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    background: #1877f2;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2 ease;
+}
+
+.login-link .log-in:hover{
+    background: #0d65d9;
+}
+
+form a{
+    text-decoration: none;
+}
+
+.login-link .forgot-password{
+    color:#1877f2;
+    font-size: 0.875rem;
+}
+
+.login-link .forgot-password:hover{
+    text-decoration: underline;
+}
+
+hr{
+    border: none;
+    height: 1px;
+    margin-top:20px;
+    margin-bottom: 20px;
+    background: #ccc;
+}
+
+.create-account{
+    margin-top: 25px;
+    margin-bottom: 15px;
+    text-align: center;  
+}
+.create-account a{
+
+    padding:15px 20px;
+    background: #42b72a;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1.06em;
+    font-weight: 600;
+    transition: 0.2 ease;
+}
+.create-account a:hover{
+    background: #3ba626;
+}
+
+@media (max-width:900px){
+    .facebook-container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .facebook-container .text{
+        margin-bottom: 30px;
+    }
+}
+
+
+@media (max-width:400px){
+    .facebook-container h1{
+        font-size: 3.5rem;
+    }
+
+    .facebook-container p{
+        font-size: 1.3rem;
+
+    }
+
+    form{
+        padding: 15px;
+    }
+}
